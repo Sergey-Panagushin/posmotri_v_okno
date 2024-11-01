@@ -17,9 +17,10 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   display: inline-flex;
-  padding: 133px 30px;
+  padding: 129px 30px;
   display: flex;
-  justify-content: center;
+ 
+  
 
 }
 
@@ -48,6 +49,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  
 }
 
 .content__list {
@@ -57,18 +59,20 @@ ol {
   white-space: nowrap;
   height: 298px;
   position: relative;
-  
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   gap: 30px;
   min-height: 100%;
   min-width: 100%;
 }
 
+.result {
+  padding-top: 69px;
+}
 .content__details {
   
   display: flex;
@@ -78,20 +82,19 @@ ol {
 .result__video-container {
   min-width: 711px;
   min-height: 386px;
-  margin-bottom: 16px;
-  position: relative;
+  margin-bottom: 11px;
+
 }
 .result__video {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  
 }
 
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
-
-
 
 .content__video-card-thumbnail {
   width: 194px;
@@ -130,6 +133,7 @@ text-transform: uppercase;
 .content__card-link {
   text-decoration: none;
   color: #FFF;
+  display: block;
   
 }
 
@@ -139,6 +143,9 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -207,17 +214,16 @@ line-height: 16.2px
 
 .search-form__label:has(:focus-visible) {
 outline: 1px solid #fff;
-outline-offset: 2px;
-
+outline-offset: 1px;
 }
 
 .search-form__fieldset {
   border: none;
+  
 }
 
 .search-form__label {
   width: fit-content;
-
 }
 
 .search-form__pseudo-checkbox {
@@ -227,6 +233,7 @@ outline-offset: 2px;
   width: 19px;
   background-color: transparent;
   border: 1px solid #fff;
+  margin-bottom: 1.5px;
   
 }
 
@@ -251,7 +258,46 @@ outline-offset: 2px;
   
 }
 
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
 .search-form__label-text:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -2px;
+}
+
+.search-form__checkbox-list {
+  margin-top: 5px;
+}
+
+.search-form__textfield {
+  margin-top: 5px;
+}
+
+.search-form__fieldset.pd {
+  padding-bottom: 5px;
 }
