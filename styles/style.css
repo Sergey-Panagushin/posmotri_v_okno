@@ -77,12 +77,13 @@ ol {
   
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 19px;
 }
 .result__video-container {
   min-width: 711px;
   min-height: 386px;
   margin-bottom: 11px;
+  position: relative;
 
 }
 .result__video {
@@ -124,16 +125,19 @@ font-style: normal;
 font-weight: 700;
 line-height: 94%;
 text-transform: uppercase;
+padding-top: 7px;
 }
 
 .content__accent {
   color: #545050;
+  
 }
 
 .content__card-link {
   text-decoration: none;
   color: #FFF;
   display: block;
+  margin: 2px;
   
 }
 
@@ -287,7 +291,7 @@ outline-offset: 1px;
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: -2px;
+  outline-offset: 1px;
 }
 
 .search-form__checkbox-list {
