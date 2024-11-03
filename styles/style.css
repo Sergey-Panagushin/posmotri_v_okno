@@ -61,7 +61,7 @@ ol {
   flex-direction: row;
   align-items: end;
   gap: 30px;
-  max-width: 1140px;
+  width: 1140px;
 }
 
 .content__details {
